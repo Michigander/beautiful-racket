@@ -13,7 +13,6 @@
      (display (first HANDLE-ARGS-EXPR))))
 (provide (rename-out [funstacker-module-begin #%module-begin]))
 
-
 (define (handle-args . args)
   (for/fold ([stack-acc empty])
             ([arg (in-list args)] 
